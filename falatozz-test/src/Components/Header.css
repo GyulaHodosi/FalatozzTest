@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: cyan;
+  padding: 10px;
+}
+
+.header-title {
+  padding: 10px;
+  float: left;
+}
+
+.header-option {
+  cursor: pointer;
+  margin-right: 20px;
+  padding: 10px;
+  justify-self: right;
+  float: right;
+}
