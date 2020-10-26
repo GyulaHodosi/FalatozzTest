@@ -1,0 +1,13 @@
+.login-container {
+  margin: auto;
+  padding: 10px;
+  width: 90%;
+  background-color: lightcyan;
+}
+
+.input-field {
+  margin: auto;
+  margin-bottom: 10px;
+  display: block;
+  box-sizing: border-box;
+}
