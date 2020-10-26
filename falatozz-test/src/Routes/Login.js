@@ -20,12 +20,19 @@ export default function Login() {
         history.push("/products");
     }
 
+    function goToRegister(){
+        history.push("/register");
+    }
+
     return(
-        <div className="login-container">
-            <input name="email" placeholder="Email address" className="input-field" value={email} onChange={handleChange}></input>
-            <input name="password" placeholder="Password" className="input-field" value={password} onChange={handleChange} type="password"></input>
-            <button onClick={handleLogin}>Login</button>
-            <button>Register</button>
+        <div className="content-container">
+            <div className="login-container">
+                <div className="login-message">Please log in!</div>
+                <input name="email" placeholder="Email address" className="input-field" value={email} onChange={handleChange}></input>
+                <input name="password" placeholder="Password" className="input-field" value={password} onChange={handleChange} type="password"></input>
+                <button onClick={handleLogin}>Login</button>
+                <button onClick={goToRegister}>Register</button>
+            </div>
         </div>
     )
 }
