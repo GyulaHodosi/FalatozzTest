@@ -5,11 +5,13 @@ import Login from "./Routes/Login.js";
 import Register from "./Routes/Register.js";
 import Products from "./Routes/Products.js";
 import Cart from "./Routes/Cart.js";
+import Header from "./Components/Header.js";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Header />
         <Route exact path="/login" component={Login}/>
         <Route exact path="/register" component={Register}/>
         <Route exact path="/products" component={Products}/>
