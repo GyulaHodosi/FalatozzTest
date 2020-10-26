@@ -11,7 +11,7 @@ export default function Header(){
     
     return(
         <div className="header">
-            <div className="header-title">Falatozz.hu</div>
+            <div className="header-title">Lampi-On</div>
             <div name="cart" className="header-option" onClick={handleSelectOption}>Cart</div>
             <div name="products" className="header-option" onClick={handleSelectOption}>Products</div>
             <div name="register" className="header-option" onClick={handleSelectOption}>Register</div>
