@@ -26,12 +26,12 @@ export default function Login() {
 
     return(
         <div className="content-container">
-            <div className="login-container">
-                <div className="login-message">Please log in!</div>
-                <input name="email" placeholder="Email address" className="input-field" value={email} onChange={handleChange}></input>
-                <input name="password" placeholder="Password" className="input-field" value={password} onChange={handleChange} type="password"></input>
-                <button onClick={handleLogin}>Login</button>
-                <button onClick={goToRegister}>Register</button>
+            <div className="backboard">
+                <div className="login-message">Kérjük jelentkezz be!</div>
+                <input name="email" placeholder="E-mail cím" className="input-field" value={email} onChange={handleChange}></input>
+                <input name="password" placeholder="Jelszó" className="input-field" value={password} onChange={handleChange} type="password"></input>
+                <button onClick={handleLogin}>Bejelntkezek!</button>
+                <button onClick={goToRegister}>Regisztrálok!</button>
             </div>
         </div>
     )
