@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import CartItem from "../Components/CartItem";
 import "./Cart.css";
+import { cart, totalPrice } from "../Util/CartData";
 
 export default function Cart() {
+    const [currentCart, setCurrentCart] = useState(cart);
 
-
-    const cart = [
-        { id: 1, name: "Lamp1", price: 5600, quantity: 2, total: 11200},
-        { id: 2, name: "Lamp2", price: 6000, quantity: 1, total: 12000},
-        { id: 3, name: "Lamp3", price: 7000, quantity: 3, total: 14000},
-    ]
+    function handleChange() {
+        console.log(cart);
+        setCurrentCart(cart);
+        console.log(cart);
+    }
 
     return(
         <div className="content-container">
@@ -23,10 +24,10 @@ export default function Cart() {
                         <div className="col">Összeg</div>
                     </div>
                 </div>
-                {cart.map(i => {
-                    return <CartItem key={i.id} {...i}/>
+                {currentCart.map(i => {
+                    return <CartItem key={i.id} {...i} handleChange={handleChange}/>
                 })}
-                <div className="total">Végösszeg: 2500 Ft</div>
+                <div className="total">Végösszeg: {totalPrice} Ft</div>
                 <button onClick={() => alert("Sikeres vásárlás! Köszönjük!")}>Megveszem!</button>
             </div>
         </div>
