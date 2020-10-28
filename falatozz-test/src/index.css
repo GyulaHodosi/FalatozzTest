@@ -12,6 +12,22 @@ body {
   background-color: black;
 }
 
+button {
+  margin: 10px;
+  padding: 10px;
+  font-family: "Exo", sans-serif;
+  background-color: rgb(48, 48, 48);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: var(--primary);
+  border: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
