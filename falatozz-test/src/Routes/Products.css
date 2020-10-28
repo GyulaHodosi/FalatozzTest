@@ -1,0 +1,23 @@
+.products-container {
+}
+
+.modal {
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  background-color: var(--primary);
+  border-radius: 10px;
+  width: fit-content;
+  min-width: 50%;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.modal-container {
+  margin: auto;
+}
+
+.modal-footer {
+  padding: 10px;
+}
