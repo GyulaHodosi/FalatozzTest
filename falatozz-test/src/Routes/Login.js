@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import { setIsloggedIn } from "../Util/UserData";
 import "./Login.css";
 
 export default function Login() {
@@ -36,6 +37,7 @@ export default function Login() {
 
     function handleLogin(){
         if(emailIsValid && password !== "") {
+            setIsloggedIn("true");
             history.push("/products");
         } else if (password === "") {
             alert("Kérjük add meg a jelszavad!");
