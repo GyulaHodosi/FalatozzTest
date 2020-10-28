@@ -21,3 +21,17 @@
 .underline {
   border-bottom: 1px solid black;
 }
+
+.delete-cartitem {
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  background-color: black;
+  color: red;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  user-select: none;
+}
